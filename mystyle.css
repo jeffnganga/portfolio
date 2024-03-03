@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.aluta {
+  background:linear-gradient(rgba(224, 211, 193, 0.5), rgba(223, 211, 224, 0.5)), url(laptop-3423713_1280.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+ }
+
+#menu-icon{
+  font-size: 35px;
+  margin-left: 25px;
+  cursor: pointer;
+ 
+}
+
+@media (max-width:900px){
+  .sec2{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.rithe{
+  color: orangered;
+  margin-bottom: 40px;
+}
+
+.rithe:hover{
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+
+nav ul li {
+  margin-right: 20px; 
+  align-items: right;
+}
+
+.gef{
+  font-family: "Sofia", sans-serif;
+  color: rgb(145, 42, 4);
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+   gap: 60px;
+  color: black;
+  text-decoration: none;
+  color: #212121; 
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  color: orangered;
+}
+
+.chepa{
+  margin-left: 8%;
+  margin-top: 15%;
+  max-width: 450px;
+}
+
+img{
+  justify-content: flex-end;
+}
+
+.chepa p{
+  color: #212121;
+  line-height: 22px;
+
+}
+.btn{
+ width: 160px;
+ background: transparent;
+ cursor: pointer;
+ border-radius: 10px;
+ font-weight: bold;
+ margin-top: 20px;
+ height: 30px;
+border: 1px solid rgb(75, 74, 74);
+transition: transform .4s;
+}
+
+.btn:hover{
+  color: #e25503;
+
+}
+
+
+.btn:active {
+  
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+
+.p1{
+  font-size: 20px;
+}
+
+.sec2{
+  background-color: rgb(204, 195, 195);
+  width: 100%;
+  padding: 100px 0px;
+  
+}
+.hr{
+  padding-top: 28px;
+  font-weight:bold ;
+  color: orangered;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.kesh{
+  padding-top: 28px;
+  text-align: center;
+  font-size: 20px;
+  font-weight:bold ;
+  color: orangered;
+  
+}
+
+.ars{
+  margin-bottom: 13px;
+}
+
+.hr:hover{
+  text-decoration: underline;
+}
+
+.hb{
+  color: orangered;
+  margin-bottom: 12px;
+}
+
+.hb:hover{
+  text-decoration: overline;
+}
+
+.main{
+  width: 1120px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buda{
+  width: 750px;
+}
+
+.gas{
+  color: orangered;
+}
+
+.ngash{
+  height: auto;
+  width: 350px;
+}
+
+.skills{
+  margin: auto;
+  width: 1100px;
+  padding: 100px 0;
+}
+
+.skills h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.left{
+  width: 50%;
+}
+
+.left h1{
+  text-align: left;
+  font-size: 30px;
+}
+
+.left p{
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.right{
+  flex: 1;
+  margin-left: 30px;
+}
+
+.right .line{
+  margin-bottom: 15px;
+}
+
+.right .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .info span{
+ font-weight: 500;
+ font-size: 18px; 
+}
+
+.right .bars{
+  background-color: #666;
+  height: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.right .bars::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #e25503;
+  
+}
+
+.right .html::before{
+ width:88% ;
+}
+
+.right .css::before{
+  width:80% ;
+}
+.right .boostrap::before{
+  width: 84%;
+}
+.right .js::before{
+  width:60% ;
+}
+
+.contact{
+  background-color: rgb(4, 28, 63);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.guzu{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.chase{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 30px;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+.bmw{
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.are{
+  border-radius: 8px;
+}
+
+.finya{
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+.piga{
+  text-align: left;
+}
+
+.piga h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.piga p{
+  margin-bottom: 10px;
+}
+.piga i{
+  margin-right: 10px;
+  
+}
+
+@media screen and (max-width:768px){
+   .guzu{
+  padding:20px;
+}
+.chase{
+  grid-template-columns:1fr;
+}
+}
+
+.pap{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ref{
+  width: 160px;
+  color: antiquewhite;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  height: 30px;
+ border: 3px solid rgb(75, 74, 74);
+ transition: transform .4s;
+ }
+ 
+ .ref:hover{
+   color: #e25503;
+ 
+ }
+ 
+ .ref:active {
+   
+   box-shadow: 0 2px #666;
+   transform: translateY(4px);
+ }
+ 
