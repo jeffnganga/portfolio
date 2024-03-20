@@ -3,22 +3,56 @@
   padding: 0;
 }
 .aluta {
-  background:linear-gradient(rgba(224, 211, 193, 0.5), rgba(223, 211, 224, 0.5)), url(laptop-3423713_1280.png);
+  background:linear-gradient(rgba(224, 211, 193, 0.5), rgba(223, 211, 224, 0.5)), url(image/laptop-3423713_1280.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
  }
 
-#menu-icon{
-  font-size: 35px;
-  margin-left: 25px;
-  cursor: pointer;
- 
+
+ .sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  display: none;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ }
+.sidebar li{
+width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+@media(max-width: 400px){
+  .sidebar{
+   width: 100%;
+  }
 }
 
 @media (max-width:900px){
   .sec2{
     grid-template-columns: 1fr;
+    width: 60px;
   }
 
 }
@@ -40,6 +74,7 @@ nav ul {
   justify-content: flex-end;
 }
 .header-container {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +153,7 @@ transition: transform .4s;
 .sec2{
   background-color: rgb(204, 195, 195);
   width: 100%;
-  padding: 100px 0px;
+  padding: 100px 10px;
   
 }
 .hr{
@@ -166,21 +201,64 @@ transition: transform .4s;
 
 .buda{
   width: 750px;
+  margin-left: 0;
 }
 
 .gas{
   color: orangered;
 }
 
+.zion{
+  border-radius: 80px;
+}
+
 .ngash{
   height: auto;
-  width: 350px;
+  background-color: #e25503;
+  width: 330px;
+  border-radius: 40%;
 }
+.ngash:hover {
+  animation: shake 0.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@media screen and (max-width:768px ){
+   .main{
+    flex-direction: column;
+   }
+   .ngash, .buda{
+   width: 100%;
+   
+   }
+   .ngash{
+    max-width: 40%;
+   }
+}
+
+
+
+
+
 
 .skills{
   margin: auto;
-  width: 1100px;
-  padding: 100px 0;
+  padding: 100px 10px;
 }
 
 .skills h1{
@@ -256,6 +334,60 @@ transition: transform .4s;
 }
 .right .js::before{
   width:60% ;
+}
+
+@media screen and (max-width:768px ){
+  .content{
+    flex-direction: column;
+  }
+  .left, .right{
+    width: 100%;
+  }
+}
+
+/*Prject*/
+.pr2{
+  background-color: rgb(204, 195, 195);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fire{
+  color: #e25503;
+}
+.card{
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card:hover{
+  background-color: #f19c6b;
+  transform: translateX(-10px);
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.content{
+  padding: 15px;
+}
+.content h2{
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+.content p{
+  font-size: 15px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+.hp{
+  text-align: center;
+  margin-bottom: 18px;
 }
 
 .contact{

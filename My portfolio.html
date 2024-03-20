@@ -11,6 +11,7 @@
   <!-- or -->
   <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <header>
@@ -18,18 +19,27 @@
     <div class="jaba">
       <div class="fire">
     <nav>
-      <img src="serious.jpg" class="rounded-circle" height="60px">
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About Me</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#project">Project's</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</ul>
+      <img src="image/serious.jpg" class="zion" height="60px">
 
+      <ul class="sidebar">
+        <img src="image/close-150192_640.png" height="38px" alt="" onclick="hideSidebar()">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project's</a></li>
+        <li><a href="#contact">Contact</a></li>
+          
+      </ul>
+      
+<ul>
+  <li class="hideOnMobile"><a href="#home">Home</a></li>
+  <li class="hideOnMobile"><a href="#about">About Me</a></li>
+  <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+  <li class="hideOnMobile"><a href="#project">Project's</a></li>
+  <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+  <img src="image/menu-regular-24.png" alt="" onclick="showSidebar()" class="menu-button">
+</ul>
     </nav>
-  </div>
     </div>
     <!--landing page-->
     <div class="chepa">
@@ -45,7 +55,7 @@
 
 <section id="about" class="sec2">
   <div class="main">
-    <img src="genje1.jpg" height="260px" class="ngash">
+    <img src="image/genje1.jpg" height="260px" class="ngash">
 <div class="buda">
     <h3 class="hr">About Me</h3>
   <p class="">Hi my name  is <span class="gas">Geoffrey Ng'ang'a </span> and i am a innovative web developer and graphic designer with a passion for creating elegant solutions and optimizing user experiences."i am always enthusiastic in 
@@ -55,45 +65,46 @@
 <br>
 <div class="">
 <h4 class="hb">Hobby</h4>
-    <p>Outside of coding, you'll often find me exploring the <span class="gas">latest trends</span> in web development, experimenting with new technologies, or contributing to open-source projects. I believe in continuous learning and am always seeking opportunit
-      ies to expand my skill set and stay ahead of industry advancements.</p>
+    <p>Outside of coding, you'll often find me exploring the <span class="gas">latest trends</span> in web development, experimenting with new technologies, or contributing to open-source projects. I believe in continuous learning and am always seeking 
+      opportunities to expand my skill set and stay ahead of industry advancements.</p>
 </div>
 </div>
     </section>
 
 <!--skillss-->
 <section id="skills" class="skills">
-  <h1 class="rithe">My skills</h1>
+  <h1 class="rithe">My Skills</h1>
 <div class="content">
   <div class="left">
 <h1>My creative skills</h1>
 <p>Creativity is at the heart of my approach to web development. Beyond simply writing code, I see each project as a canvas for innovation and expression. Drawing from a diverse toolkit of design principles, I infuse every website I create with unique and captivating elements that set it apart. </p>
   </div>
+  <br>
   <div class="right">
   <div class="line">
     <div class="info">
-      <span><img src="download.png" height="33px"></span>
+      <span><img src="image/download.png" height="33px"></span>
       <span>88%</span>
     </div>
     <div class="bars html"></div>
   </div>
   <div class="line">
     <div class="info">
-      <span><img src="download (1).png" height="33px"></span>
+      <span><img src="image/download (1).png" height="33px"></span>
       <span>80%</span>
     </div>
     <div class="bars css"></div>
   </div>
   <div class="line">
     <div class="info">
-      <span><img src="download.jpeg" height="33px"></span>
+      <span><img src="image/download.jpeg" height="33px"></span>
       <span>84%</span>
     </div>
     <div class="bars boostrap"></div>
   </div>
   <div class="line">
     <div class="info">
-      <span><img src="download (2).png" height="33px"></span>
+      <span><img src="image/download (2).png" height="33px"></span>
       <span>60%</span>
     </div>
     <div class="bars js"></div>
@@ -102,8 +113,29 @@
 </div>
 </section>
 <!--prject-->
-<section id="project">
-    
+<section id="project" class="pr2">
+  <h1 class="fire">Project's</h1>
+    <div class="card">
+      <img src="image/shoes-346986_640.jpg" alt="" height="190px">
+      <div class="content">
+        <h2>M-Shoe</h2>
+        <p>M-Shoe my first project</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/istockphoto-1476261444-1024x1024.jpg" alt="" height="190px">
+      <div class="content">
+        <h2>Nairobi Neuropysiology</h2>
+        <p>Nairobi Neuropysiology my second project</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/building-66789_640.jpg" alt="" height="190px">
+      <div class="content">
+        <h2>Smart Hotel</h2>
+        <p>Smart Hotel my third project</p>
+      </div>
+    </div>
 </section>
 
    <!--contact-->
@@ -112,6 +144,7 @@
   <div class="guzu">
     <div class="chase">
     <div class="rap">
+      <Form id="findme" action="https://api.web3forms.com/submit" method="POST">
     <div class="form-group">
       <input type="text" class="bmw" name="name" placeholder="Your Name" required>
     </div>
@@ -129,9 +162,9 @@
       </div>
       <br>
           
-      <button  class="ref" type="submit">Submit</button>
+      <button  class="ref" type="submit" onclick="submitForm()" >Submit</button>
     </div>  
-    
+  </Form >
     <div class="piga">
         <h3>Contact Information</h3>
         <p><i class="bx bx-phone"></i>0745368494</p>
@@ -143,9 +176,10 @@
   <br>
   <hr>
   <footer>
-    <p class="pap">copywrite &copy;-All rights reserved 2024 Nairobi</p>
+    <p class="pap">copywrite &copy; Geoffrey Nganga -All rights reserved 2024 Nairobi</p>
   </footer>
   </section>
+  <script src="ajay.js"></script>
 </body>
 </html>
 
